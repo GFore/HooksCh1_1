@@ -1,4 +1,5 @@
 import React from 'react';
+import Hook1 from './Hook1';
 
 class MyName extends React.Component {
   constructor (props) {
@@ -18,6 +19,7 @@ class MyName extends React.Component {
       <div>
         <h1>My name is: {name}</h1>
         <input type="text" value={name} onChange={(e) => this.handleChange(e)} />
+        <Hook1 />
       </div>
     )
   }
